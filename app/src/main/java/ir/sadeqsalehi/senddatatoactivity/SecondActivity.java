@@ -36,6 +36,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 Intent intent = new Intent();
+                intent.putExtra("message","Confirm Successfully");
                 setResult(RESULT_OK, intent);
                 finish();
                 return false;
